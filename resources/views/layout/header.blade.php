@@ -14,12 +14,28 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav">
-                        <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="/">@lang('menu.home')</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="/#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                     </ul>
+                    <div class="brand-logo btn-group pull-right">
+                        <button class="btn btn-round primary_btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @foreach (Helpers::lang() as $l)
+                                @if($l['value'] == Session::get('locale'))
+                                    <img src="{{$l['flag']}}" class="m-1" width="24" height="24"/> {{$l['name']}}
+                                @endif
+                            @endforeach
+                        </button>
+                        <div class="dropdown-menu animated flipInX">
+                            @foreach (Helpers::lang() as $l)
+                                @if($l['value'] != Session::get('locale'))
+                                    <a class="dropdown-item" href="{{'/lang?lang='.$l['value']}}"><img src="{{$l['flag']}}" class="m-3" width="24" height="24"/> <b>{{$l['name']}}</b></a>
+                                @endif
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -8,3 +8,4 @@
 <link rel="stylesheet" href="{{asset('assets/vendors/nice-select/css/nice-select.css')}}">
 <!-- main css -->
 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">

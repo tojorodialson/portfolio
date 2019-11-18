@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta name="propeller" content="465f0d77882d9aca85b7afcaa09fb560">
     <meta charset="UTF-8">

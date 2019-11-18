@@ -9,6 +9,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/flush', function(){
+    return Session::flush();
+});
+
+//changement de langue
+Route::get('/lang', 'LangController@index');
+
 Route::get('/', 'Landing\HomeController@index');
 Route::get('/contact', 'Landing\HomeController@contact');
 Route::post('/contact', 'Landing\HomeController@sendMail');

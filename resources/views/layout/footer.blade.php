@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row footer_bottom justify-content-center">
-            <p class="col-lg-8 col-sm-12 footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
+            <p class="col-lg-8 col-sm-12 footer-text">Copyright &copy;{{date('Y')}} All rights reserved.</p>
         </div>
     </div>
 </footer>

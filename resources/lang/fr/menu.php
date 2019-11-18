@@ -14,5 +14,6 @@ return [
     */
 
     'home' => 'Accueil',
+    'about' => 'A Propos',
 
 ];

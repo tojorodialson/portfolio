@@ -5,7 +5,7 @@
                 <div class="footer_top flex-column">
                     <div class="footer_logo">
                         <a href="#">
-                            <img src="img/logo2.png" alt="">
+                            <img src="{{asset('assets/img/logo.png')}}" alt="Logo Tojo RODIALSON" width="50" height="50">
                         </a>
                         <div class="d-lg-block d-none">
                             <nav class="navbar navbar-expand-lg navbar-light justify-content-center">

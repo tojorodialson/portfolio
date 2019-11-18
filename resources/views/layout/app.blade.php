@@ -10,6 +10,7 @@
     <link rel="icon" href="{{asset('assets/img/favicon.png')}}" type="image/png">
     <title>Tojo RODIALSON - A passion for the codes</title>
     @include('layout.head')
+    @include('layout.pub-2')
 </head>
 <body>
     @include('layout.header')
@@ -17,5 +18,6 @@
     @include('layout.footer')
     @include('layout.footer-script')
     @include('layout.analytics')
+    @include('layout.pub-1')
 </body>
 </html>

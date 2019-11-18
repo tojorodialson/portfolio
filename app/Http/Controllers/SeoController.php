@@ -9,7 +9,7 @@ use Artesaos\SEOTools\Facades\SEOTools;
 class SeoController extends Controller {
 
     public static function seoManager($title = null, $description = null, $key = null){
-        $title = empty($title) ? "Tojo RODIALSON - A passion for the codes" : $title;
+        $title = empty($title) ? "Tojo RODIALSON - A passion for the codes" : $title.' - Tojo RODIALSON';
 
         $description = empty($description) ? "I'm Tojo RODIALSON, backend developer since 2014. I choose this job because I have a passion for codes. Everyday I speak PHP and work on Laravel a big structure. If one day, I'll must speak C# or Java, I'll be very happy :)" : $description;
 

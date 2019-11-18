@@ -15,6 +15,7 @@ class HomeController extends Controller {
     }
 
     public function contact(){
+        SeoController::seoManager('Contact');
         return view('pages.contact');
     }
 

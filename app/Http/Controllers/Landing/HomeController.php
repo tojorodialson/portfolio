@@ -3,12 +3,14 @@ namespace  App\Http\Controllers\Landing;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\SeoController;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 class HomeController extends Controller {
 
     public function index(){
+        SeoController::seoManager();
         return view('pages.home');
     }
 
@@ -25,7 +27,7 @@ class HomeController extends Controller {
 		$subject = ucwords($request->subject);
 		$message = $request->message;
 		$view = view('emails.contact', compact('email', 'name', 'subject', 'message'));
-    
+
         try{
             $mail->CharSet = 'utf-8';
             $mail->isSMTP();
